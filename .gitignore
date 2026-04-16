@@ -1,0 +1,8 @@
+data/firmwares/*.bin
+data/firmwares/*.zip
+data/firmwares/*.7z
+data/firmwares/*.squashfs
+data/firmwares/_*/
+__pycache__/
+*.pyc
+.env

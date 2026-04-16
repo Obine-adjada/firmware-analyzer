@@ -1,0 +1,332 @@
+{
+  "firmware": "TL-WR841Nv14_EU_0.9.1_4.16_up_boot[180319-rel57291].bin",
+  "sha256": "6ceb216895523d2d5baa18ea8092157290b1ee94024561e42e3d17a1b29c9987",
+  "date_analyse": "2026-04-16T12:53:05.269078",
+  "vendor": "TP-Link",
+  "modele": "TL-WR841N",
+  "version_hw": "V14",
+  "build": "180319",
+  "architecture": "MIPS little-endian",
+  "resume": {
+    "total": 51,
+    "HIGH": 4,
+    "MEDIUM": 47,
+    "LOW": 0
+  },
+  "findings": [
+    {
+      "file": "etc/passwd.bak",
+      "line": 1,
+      "content": "admin:$1$$iC.dUsGpxNNJGeOm1dFio/:0:0:root:/:/bin/sh",
+      "severity": "HIGH"
+    },
+    {
+      "file": "usr/bin/httpd",
+      "content": "/var/tmp/pc/",
+      "type": "chemin_suspect",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/httpd",
+      "content": "/var/tmp/pc/web/",
+      "type": "chemin_suspect",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/httpd",
+      "content": "/var/tmp/route",
+      "type": "chemin_suspect",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/wscd",
+      "content": "e.g.: 192.168.0.1",
+      "type": "ip_hardcodee",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/wscd",
+      "content": "/var/run/wscd.pid",
+      "type": "chemin_suspect",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/wscd",
+      "content": "http://%s:%d/description.xml",
+      "type": "url_http",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/wscd",
+      "content": "239.255.255.250:1900",
+      "type": "ip_hardcodee",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/wscd",
+      "content": "239.255.255.250",
+      "type": "ip_hardcodee",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/wscd",
+      "content": "http://schemas.xmlsoap.org/soap/envelope/",
+      "type": "url_http",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/wscd",
+      "content": "xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\"",
+      "type": "url_http",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/wscd",
+      "content": "s:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\">",
+      "type": "url_http",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/wscd",
+      "content": "xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\"",
+      "type": "url_http",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/wscd",
+      "content": "s:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\">",
+      "type": "url_http",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/wscd",
+      "content": "<s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\" s:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\"><s:Body>",
+      "type": "url_http",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/wscd",
+      "content": "MAN: \"http://schemas.xmlsoap.org/soap/envelope/\"; ns=01",
+      "type": "url_http",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/wscd",
+      "content": "<s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\"",
+      "type": "url_http",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/wscd",
+      "content": "s:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\">",
+      "type": "url_http",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/wscd",
+      "content": "<s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\"",
+      "type": "url_http",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/wscd",
+      "content": "s:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\">",
+      "type": "url_http",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/wscd",
+      "content": "<s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\"",
+      "type": "url_http",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/wscd",
+      "content": "s:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\">",
+      "type": "url_http",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/wscd",
+      "content": "http://www.w3.org/XML/1998/namespace",
+      "type": "url_http",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/wscd",
+      "content": "http://www.w3.org/2000/xmlns/",
+      "type": "url_http",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/upnpd",
+      "content": "/var/tmp/upnpd/pm.db",
+      "type": "chemin_suspect",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/upnpd",
+      "content": "http://%s:%d/%s",
+      "type": "url_http",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/upnpd",
+      "content": "/var/tmp/upnpd/upnpd.conf",
+      "type": "chemin_suspect",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/upnpd",
+      "content": "/var/tmp/upnpd",
+      "type": "chemin_suspect",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/upnpd",
+      "content": "/var/tmp/upnpd",
+      "type": "chemin_suspect",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/upnpd",
+      "content": "/var/tmp/upnpd/pm.db",
+      "type": "chemin_suspect",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/upnpd",
+      "content": "http://%d.%d.%d.%d:%d/",
+      "type": "url_http",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/upnpd",
+      "content": "xml_document_path = /var/tmp/upnpd",
+      "type": "chemin_suspect",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/tddp",
+      "content": "/var/tmp/pc/",
+      "type": "chemin_suspect",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/cos",
+      "content": "/var/tmp/pc/",
+      "type": "chemin_suspect",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/cos",
+      "content": "ps > /var/tmp/pslist",
+      "type": "chemin_suspect",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/cos",
+      "content": "/var/tmp/pslist",
+      "type": "chemin_suspect",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/cos",
+      "content": "open /var/tmp/pslist failed!",
+      "type": "chemin_suspect",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/cos",
+      "content": "rm /var/tmp/pslist",
+      "type": "chemin_suspect",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/cos",
+      "content": "/var/tmp/dconf",
+      "type": "chemin_suspect",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/cos",
+      "content": "192.168.0.1",
+      "type": "ip_hardcodee",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/cos",
+      "content": "192.168.1.1",
+      "type": "ip_hardcodee",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/cos",
+      "content": "192.168.2.1",
+      "type": "ip_hardcodee",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/cos",
+      "content": "192.168.3.1",
+      "type": "ip_hardcodee",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/cos",
+      "content": "192.168.4.1",
+      "type": "ip_hardcodee",
+      "severity": "MEDIUM"
+    },
+    {
+      "file": "usr/bin/cos",
+      "content": "/var/tmp/umount_failed_list",
+      "type": "chemin_suspect",
+      "severity": "MEDIUM"
+    },
+    {
+      "id": "TDDP-001",
+      "file": "usr/bin/tddp",
+      "description": "Service TDDP présent — vulnérabilités connues (CVE-2020-28347)",
+      "severity": "HIGH",
+      "content": "binaire présent : usr/bin/tddp"
+    },
+    {
+      "id": "WPS-001",
+      "file": "usr/bin/wscd",
+      "description": "Service WPS actif (wscd) — vulnérable Pixie Dust",
+      "severity": "MEDIUM",
+      "content": "binaire présent : usr/bin/wscd"
+    },
+    {
+      "id": "UPNP-001",
+      "file": "usr/bin/upnpd",
+      "description": "UPnP daemon actif sans authentification",
+      "severity": "MEDIUM",
+      "content": "binaire présent : usr/bin/upnpd"
+    },
+    {
+      "id": "SSH-001",
+      "file": "usr/bin/dropbear",
+      "description": "Dropbear SSH actif par défaut",
+      "severity": "MEDIUM",
+      "content": "binaire présent : usr/bin/dropbear"
+    },
+    {
+      "id": "MD5-001",
+      "file": "etc/passwd.bak",
+      "line": 1,
+      "description": "Hash MD5 sans salt dans passwd — cassable en <1s",
+      "severity": "HIGH",
+      "content": "admin:$1$$iC.dUsGpxNNJGeOm1dFio/:0:0:root:/:/bin/sh"
+    },
+    {
+      "id": "SHELL-001",
+      "file": "etc/passwd.bak",
+      "line": 1,
+      "description": "Shell root assigné au compte admin",
+      "severity": "HIGH",
+      "content": "admin:$1$$iC.dUsGpxNNJGeOm1dFio/:0:0:root:/:/bin/sh"
+    }
+  ]
+}
